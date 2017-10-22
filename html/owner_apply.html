@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<title>Owner Application </title>
+	</head>
+
+
+	<body>
+		<!-- create a table -->
+		<table width="800" align="center">
+
+			<!-- logo -->
+			<tr>
+				<td align="center"><img src="logo.png" border="0" align="middle" height="130" width="600"></a></td>
+			</tr>
+
+			<!-- welcome msg -->
+			<tr bgcolor="LavenderBlush">
+				<td align="justify"><font face="Verdana" size="4">Welcome to the application page! If you are looking to rent out your parking space, please fill out the application below. Once approved, your parking space information will be available to all of Block Share's users. Earn some extra money from your unused parking space and solve the parking problem for your community!</font></td>
+			</tr>
+
+			<!-- form -->
+			<tr bgcolor="AliceBlue">
+				<td align="center">
+					<!-- fill in where to store data (action) later -->
+					<form action="" method="post">
+
+						<br>
+						Enter the location of your parking space
+						<br>
+						Address: <input name="address" placeholder="Street Address">
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City: <input name="city" placeholder="City">
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;State: <input name="state" placeholder="State">
+						<br>
+						Zip Code:<input name="zip" placeholder="5-digit zip code">
+						<br>
+						<br>
+
+						What is your desired hourly rate in USD? <br>Put '0' if free <input type="number">
+						<br>
+						<br>
+						On what days will your parking space be available to rent out? Select all that apply.
+						<br>
+						<input name="sunday" type="checkbox">Sunday
+						<input name="monday" type="checkbox">Monday 
+						<input name="tuesday" type="checkbox">Tuesday 
+						<input name="wednesday" type="checkbox">Wednesday 
+						<input name="thursday" type="checkbox">Thursday 
+						<input name="friday" type="checkbox">Friday
+						<input name="saturday" type="checkbox">Saturday
+						<br>
+						<br>
+						Please enter your phone number in case Block Share or the customer wants to reach you. 
+						<br>
+						<input name="phone">
+						<br>
+						<br>
+						<input name="agree" type="checkbox">I have read and agreed to Block Share's <a href="terms_conditions.html">terms and conditions</a>
+						<br>
+						<input type="submit" onclick="apply_msg()">
+						<input type="reset">
+					</form>
+				</td>
+			</tr>
+
+		</table>
+
+		<!-- submission msg -->
+		<script>
+			function apply_msg() {
+    			alert("Thank you for your application. We will be in contact with you in seven business days.");
+			}
+		</script>
+
+	</body>
+
+</html>
