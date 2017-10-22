@@ -1,6 +1,24 @@
 <html>
 	<head>
 		<title>Block Share Login</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript"> function formHandler(){
+			$(document).ready(function(){
+				if ($("#choiceowner").is(':checked')) {
+					window.location = "mainPage.html";
+
+				} else if($("#choicecustomer").is(':checked')) {
+					window.location = "Main_page_for_customer.html";
+
+				} else {
+					window.location = "admin.html";
+				}
+
+			})
+
+		}
+		</script>
+
 	</head>
 
 
@@ -21,12 +39,15 @@
 			<tr bgcolor="silver">
 				<td align="center">
 					<!-- fill in where to store data (action) later -->
-					<form action="" method="post">
+					<form name="form1" method="post">
 
 						<br>
 						Do you want to login as an owner of a parking space or a guest looking for a parking space? 
 						<br>
-						<input type="radio" name="login-as">Owner &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="login-as">Customer
+						<input name="choice" type="radio" id="choiceadmin" value="admin" checked="checked">Administrator&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input name="choice" type="radio" id="choiceowner" value="owner">Owner &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<input name="choice" type="radio" id="choicecustomer" value="customer" checked="checked">Customer
+
 						<br>
 						<br>
 
@@ -36,7 +57,7 @@
 						<br>
 						<br>
 
-						<input type="submit" name="login">
+						<input id="btnSubmit" name="btnSubmit" type="submit" value="Next" onclick="formHandler()">
 						<input type="reset">
 					</form>
 				</td>
@@ -56,6 +77,38 @@
 				</td>
 			</tr>
 		</table>
+
+<!--
+		<script>
+		$(function () {
+    		var $join = $("input[name=btnSubmit]");
+    		var processJoin = function (element) {
+        	if(element.id == "choicecustomer") {
+           		$join.attr("disabled", "disabled");
+        	}
+        	else {
+            	$join.removeAttr("disabled")
+        	}
+    	};
+
+    	$(":radio[name=choice]").click(function () {processJoin(this);}).filter(":checked") each(function () {processJoin(this);});});
+
+		</script> 
+
+		<script>
+		$(document).ready(function() {
+			$("input[name=choice]").change(function() {
+				if ($("input[name=choice]").val() == 'owner') {
+					$("#form1").attr("action","mainPage.html");
+				} else {
+					$("#form1").attr("action","Main_page_for_customer.html");
+				}
+			});
+		});
+
+		</script> -->
+
+
 	</body>
 
 </html>
