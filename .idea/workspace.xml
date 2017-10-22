@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b4fcc02f-3474-4004-881a-0f80b99484bd" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/greencar.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/pin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/pinkcar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/rate.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/hopkins_location.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/image_of_hopkins.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/html/infor_of_hopkins.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/apply_new_site.html" afterPath="$PROJECT_DIR$/html/apply_new_site.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/login.html" afterPath="$PROJECT_DIR$/html/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/mainPage.html" afterPath="$PROJECT_DIR$/html/mainPage.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
