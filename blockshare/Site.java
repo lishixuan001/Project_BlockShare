@@ -82,5 +82,5 @@ class Site {
     private String _location;
     private String _owner;
     private String _status;
-    private List<String> allValidStatus = Arrays.asList("open", "closed", "application");
+    private List<String> allValidStatus = Arrays.asList("open", "closed", "application", "declined");
 }

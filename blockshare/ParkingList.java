@@ -88,7 +88,7 @@ class ParkingList extends ArrayList{
     }
 
     /** Delete a site. */
-    public void delete(String name) {
+    public void remove(String name) {
         int index = getIndex(name);
         if (index < 0) {
             throw new Error("Empty list or no such site.");
