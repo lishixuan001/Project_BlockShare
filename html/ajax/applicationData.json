@@ -1,0 +1,15 @@
+[
+    {
+        "name": "Albert's Parking Lot",
+        "location": "ERC",
+        "status": "application"
+    },{
+        "name": "Ben's Garden",
+        "location": "Revelle",
+        "status": "application"
+    },{
+        "name": "Cindy's Backyard",
+        "location": "ERC",
+        "status": "approved"
+    }
+]
