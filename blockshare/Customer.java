@@ -21,8 +21,8 @@ class Customer extends User {
     }
 
     /** Search all nearby parking lots. */
-    public List searchAll(String location, ParkingList theParkingList) {
-        List result = new ArrayList();
+    public List<Site> searchAll(String location, ParkingList theParkingList) {
+        List<Site> result = new ArrayList();
         Iterator<Site> ParkListIterator = theParkingList.getList().iterator();
         while (ParkListIterator.hasNext()) {
             Site site = ParkListIterator.next();
@@ -39,8 +39,8 @@ class Customer extends User {
     }
 
     /** Search nearby parking lots that are available. */
-    public List searchAvailable(String location, ParkingList theParkingList) {
-        List result = new ArrayList();
+    public List<Site> searchAvailable(String location, ParkingList theParkingList) {
+        List<Site> result = new ArrayList();
         Iterator<Site> ParkListIterator = theParkingList.getList().iterator();
         while (ParkListIterator.hasNext()) {
             Site site = ParkListIterator.next();

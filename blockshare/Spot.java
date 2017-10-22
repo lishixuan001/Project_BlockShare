@@ -51,5 +51,5 @@ class Spot extends ArrayList {
     /** Name of the Site(Map) which the Spot belongs to. */
     private String _name;
     private String _status;
-    private List<String> allValidStatus = Arrays.asList("open", "closed", "application", "declined");
+    private List<String> allValidStatus = Arrays.asList("open", "closed");
 }

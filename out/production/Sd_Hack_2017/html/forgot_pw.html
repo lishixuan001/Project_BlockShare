@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>Retrieve your password</title>
+	</head>
+
+
+	<body>
+		<!-- create a table -->
+		<table width="500" align="center">
+
+			<!-- logo -->
+			<tr>
+				<td align="center"><img src="logo.png" border="0" align="middle" height="130" width="600"></a></td>
+			</tr>
+
+			<!-- welcome msg -->
+			<tr bgcolor="OldLace">
+				<td align="justify"><font size="4">Enter your username and your email associated with you account to retrive your password for your Block Share account.</font></td>
+			</tr>
+
+			<!-- form -->
+			<tr bgcolor="HoneyDew">
+				<td align="center">
+					<!-- fill in where to store data (action) later -->
+					<form action="" method="post">
+
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: <input name="pw-email">
+						<br>
+						Username: <input name="pw-username">
+						<br>
+						<br>
+
+						<input type="submit" onclick="msg()">
+						<input type="reset">
+					</form>
+				</td>
+			</tr>
+
+			<!-- go back to login page -->
+			<tr align="center">
+				<td>
+					<font size="2">Click <a href="login.html">here</a> to go back to the login page</font>
+				</td>
+			</tr>
+
+		</table>
+		<script>
+			function msg() {
+    			alert("The instructions to reset your password has been sent to your email.");
+			}
+		</script>
+	</body>
+
+</html>

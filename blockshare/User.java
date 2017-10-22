@@ -39,33 +39,33 @@ class User {
         return _password;
     }
 
-    /** Search sites for given location. */
-    public List<Site> searchSites(String location, ParkingList theParkingList) {
-        List<Site> result = new ArrayList<>();
-        for (int i = 0; i < theParkingList.size(); i++) {
-            Site site = theParkingList.getSite(i);
-            String status = site.getStatus();
-            if (isApprovedStatus(status)) {
-                String siteLocation = site.getLocation();
-                if (siteLocation.equals(location)) {
-                    result.add(site);
-                    site.show();
-                }
-            }
-        }
-        return result;
-    }
+//    /** Search sites for given location. */
+//    public List<Site> searchSites(String location, ParkingList theParkingList) {
+//        List<Site> result = new ArrayList<>();
+//        for (int i = 0; i < theParkingList.size(); i++) {
+//            Site site = theParkingList.getSite(i);
+//            String status = site.getStatus();
+//            if (isApprovedStatus(status)) {
+//                String siteLocation = site.getLocation();
+//                if (siteLocation.equals(location)) {
+//                    result.add(site);
+//                    site.show();
+//                }
+//            }
+//        }
+//        return result;
+//    }
 
-    /** Check if the status is approved type. */
-    private boolean isApprovedStatus(String status) {
-        boolean result = false;
-        for (int i = 0; i < approvedStatus.size(); i++) {
-            if (approvedStatus.get(i).equals(status)) {
-                return true;
-            }
-        }
-        return result;
-    }
+//    /** Check if the status is approved type. */
+//    private boolean isApprovedStatus(String status) {
+//        boolean result = false;
+//        for (int i = 0; i < approvedStatus.size(); i++) {
+//            if (approvedStatus.get(i).equals(status)) {
+//                return true;
+//            }
+//        }
+//        return result;
+//    }
 
     /** Username cannot change after registration. */
     private final String _username;
@@ -76,5 +76,5 @@ class User {
     /** Usertype cannot change after registration. */
     private final String _usertype;
 
-    private List<String> approvedStatus = Arrays.asList("open", "closed");
+//    private List<String> approvedStatus = Arrays.asList("open", "closed");
 }

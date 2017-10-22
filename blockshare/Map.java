@@ -1,15 +1,6 @@
 package blockshare;
 
-import org.apache.commons.collections.ArrayStack;
-
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-import java.io.PrintStream;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.List;
 
 
@@ -41,9 +32,11 @@ class Map extends ArrayList {
         _map.add(spot);
     }
 
+    @Override
     /** Delete spot from the map. */
-    public void delete(int index) {
+    public Object remove(int index) {
         _map.remove(index);
+        return null;
     }
 
     /** Show the map in a way that clearly show availability. */
@@ -51,9 +44,11 @@ class Map extends ArrayList {
         if (size() <= 0) {
             throw new Error("Empty Site.");
         }
+        System.out.println("Spots' status are: ");
         for (int i = 0; i < size(); i++) {
             Spot spot = getMap().get(i);
-            System.out.print(spot.getStatus());
+            System.out.println("   " + (i+1) + "." + spot.getStatus());
+
         }
     }
 

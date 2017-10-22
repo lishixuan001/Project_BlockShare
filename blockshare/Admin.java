@@ -25,7 +25,7 @@ class Admin extends User {
     }
 
     /**  Show sites by selection. */
-    public void showSiteInApplication(String status, ParkingList theParkingList) {
+    public void showSelectedSite(String status, ParkingList theParkingList) {
         theParkingList.show(status);
     }
 
@@ -75,6 +75,12 @@ class Admin extends User {
         } else if (isInApplicationStatus(status)) {
             System.out.println("Selected site hasn't been approved yet, please approve/decline first.");
         }
+    }
+
+    /** Add a site on ParkingList*/
+    public void addSite(Site site, ParkingList theParkingList) {
+        theParkingList.add(site);
+        System.out.println("Selected site is now added");
     }
 
     /** Remove a site on ParkingList*/

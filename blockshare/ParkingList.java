@@ -19,11 +19,15 @@ class ParkingList extends ArrayList{
     ParkingList() {}
 
     public Site getSite(int index) {
-        return _list.get(index);
+        return getList().get(index);
     }
 
     public Site getSite(String name) {
         int index = getIndex(name);
+        if (index < 0) {
+            System.out.println("No corresponding site found.");
+            return null;
+        }
         return getSite(index);
     }
 

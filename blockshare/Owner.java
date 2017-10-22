@@ -28,15 +28,22 @@ class Owner extends User {
         System.out.println("Application Submitted");
     }
 
-    public List<Site> checkMyApplication(ParkingList theParkingList) {
+    public int numOfSites(ParkingList theParkinglist) {
+        List<Site> siteList = showMySites(theParkinglist);
+        int number = siteList.size();
+        System.out.println("You have totally [" + number + "] sites.");
+        return number;
+    }
+
+    public List<Site> showMySites(ParkingList theParkingList) {
         List<Site> result = new ArrayList();
         Iterator<Site> AppListIterator = theParkingList.getList().iterator();
         while (AppListIterator.hasNext()) {
             Site site = AppListIterator.next();
             String siteOwner = site.getOwner();
             if (siteOwner.equals(this.getUsername())) {
-                System.out.println("Your application for [" + site.getName()
-                        + "] is [" + site.getStatus() + "]");
+                System.out.println("Your site named [" + site.getName()
+                        + "] is now [" + site.getStatus() + "]");
                 result.add(site);
             }
         }
@@ -52,8 +59,8 @@ class Owner extends User {
             boolean condition1 = siteOwner.equals(this.getUsername());
             boolean condition2 = siteName.equals(name);
             if (condition1 && condition2) {
-                System.out.println("Your application for [" + site.getName()
-                        + "] is [" + site.getStatus() + "]");
+                System.out.println("Your applied site for [" + site.getName()
+                        + "] is now [" + site.getStatus() + "]");
             }
         }
         return;
