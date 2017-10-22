@@ -1,0 +1,61 @@
+<html>
+	<head>
+		<title>Sign up for an account</title>
+	</head>
+
+
+	<body>
+		<!-- create a table -->
+		<table width="500" align="center">
+			<!-- logo -->
+			<tr>
+				<td align="center"><img src="logo.png" border="0" align="middle" height="130" width="600"></a></td>
+			</tr>
+
+			<!-- welcome msg -->
+			<tr bgcolor="">
+				<td align="center"><font size="5">Welcome to Block Share!<br> Enter your information to create an account</font></td>
+			</tr>
+
+			<!-- form -->
+			<tr bgcolor="Cornsilk">
+				<td align="center">
+					<!-- fill in where to store data (action) later -->
+					<form action="" method="post">
+
+						<br>
+						Do you want to register as an owner of a parking space or a guest looking for a parking space? 
+						<br>
+						<input type="radio" name="signup-as">Owner &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="signup-as">Customer
+						<br>
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email: <input name="signup-email">
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username: <input name="signup-username">
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password: <input type="password" name="signup-pw">
+						<br>
+						Confirm Password: <input name="login-username">
+						<br>
+
+						<input type="submit" onclick="signup_msg()">
+						<input type="reset">
+					</form>
+				</td>
+			</tr>
+
+			<!-- go back to login page -->
+			<tr align="center">
+				<td>
+					<font size="2">Click <a href="login.html">here</a> to go back to the login page</font>
+				</td>
+			</tr>
+		</table>
+		<script>
+			function signup_msg() {
+    			alert("Thank you for creating an account with Block Share. Please go back to the main page to login.");
+			}
+		</script>
+	</body>
+
+</html>
