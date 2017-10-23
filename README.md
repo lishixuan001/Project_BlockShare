@@ -3,6 +3,9 @@ MLH Sd_Hack_2017 <br>
 The purpose for the project is to build a parking-guidance system. <br>
 When people search a destination, our App/Web should be able to return names and locations of the available parking spaces which are closest to the destination location. There should be two types of parking areas, public parking stations and private sharing slots. When people select one of the parking spaces, our App/Web should be able to guide the customer to the available parking lot (Note: not the parking station, but the specific parking lot). 
 
+# Running the program
+User interface now support reading and checking the files but not writing into it yet. We still need to write in data off line. To run the program, direct to "html" directory and use command in terminal "npm start", then use your browser to view address "http://localhost:21023/login.html", and just explore the project.
+
 # Realization [In order to maximize our efficiency. We will skip partI and start by partII]
 <b>Part I</b> <br>
 First we need to build a system of maps (demo) where people can find closest parking lots based on a specific location input. <br>
